@@ -4,21 +4,12 @@
 
 # - 6782 -> 23
 # - 0,56 -> 11
-import math
+
 
 number=input("Введите вещественное число: ")
-#number=math.fabs(numbers)
-
-def sum_nambers(number):
+str_number=number.replace(',','') #убираем запятую из числа
+lst_str=list(str_number) #записываем цифры числа как список
+lst_num=map(int,lst_str) # приобразовываем символы списка в int
+s=sum(lst_num) #суммируем 
+print(s)
     
-    str_number=str(number)
-    str_number=str_number.replace(',','')
-    lst_str=list(str_number)
-    lst_num=map(int,lst_str)
-    s=sum(lst_num)
-    return s
-    
-    
-print(sum_nambers(number))
-# если ввести число с минусом -код не работает. Нашла модуль abc, но на него ругается, если подставить
-

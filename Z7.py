@@ -6,11 +6,13 @@
 
 number=int(input("Введите число: "))
 
-def list_from(number:int):
+def list_from(number):
     list_numbers=[]
     fact=1
-    for i in range (1,number+1):
+    i=1
+    while i < (number+1):
         fact*=i
         list_numbers.append(fact)
+        i+=1
     return list_numbers
 print(list_from(number))

@@ -4,18 +4,6 @@
 
 # - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
 
-# n=int(input('Введите число '))
-# def sequence_num (n):
-#   for i in range (1,n+1):
-#         return [(1+1/i)**i]
-      
-
-  
-# print (sequence_num (n))
-#print (sum(sequence_num (n)))
-
-
-# from msilib import sequence
 
 n = int(input('Введите число: ')) 
 
